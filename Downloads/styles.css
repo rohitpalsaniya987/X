@@ -1,0 +1,148 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+iframe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  z-index: -1;
+}
+
+header {
+  background-color: rgba(51, 51, 51, 0.5); /* Transparent black background with opacity */
+  padding: 20px;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #a8c5ff;
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background on hover */
+}
+
+.download-section {
+  text-align: center;
+  margin: 50px;
+}
+
+.download-section h1 {
+  font-size: 36px;
+  color: #fff; /* Set text color to white */
+}
+
+.download-section p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #fff; /* Set text color to white */
+}
+
+.download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px;
+  text-decoration: none;
+  border: 1px solid #fff; /* Add a border for better visibility */
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent white background with opacity */
+  position: relative;
+  overflow: hidden;
+}
+
+.button img {
+  width: 30px; /* Adjust the size of the logos as needed */
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background on hover */
+  color: #a8c5ff;
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+.microsoft {
+  background-color: #4F4F4F;
+}
+
+.playstore {
+  background-color: #00aced;
+}
+
+.ios {
+  background-color: #333;
+}
+
+.linux {
+  background-color: #96c22e;
+}
+
+footer {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}

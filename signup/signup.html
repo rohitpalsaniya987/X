@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalist Signup Form with Blurred Background</title>
+  <link rel="stylesheet" href="style.css" >
+  <script async src="./script.js"></script>
+
+</head>
+<body>
+
+  <div id="loading"></div>
+
+  <div id="navbar">
+    <div id="navbar-left">
+      <div id="social-media">Social Media</div>
+    </div>
+    <div id="navbar-right">
+      <a href="../index.html">Home</a>
+      <a href="#">Downloads</a>
+      <a href="#">News</a>
+      <a href="#">Contact us</a>
+    </div>
+  </div>
+
+  <iframe src="../background/flower.html" frameborder="0"></iframe>
+
+  <form>
+    <h2>Sign Up</h2>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <label for="confirm password">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <div id="company-info">
+    <h3>Welcome to Palsaniya Corp.</h3>
+    <p>This is a demo website made by a group of students from IIT Bombay. We would like to make more websites like this in the future. This signup page is created by Rohit Palsaniya.</p>
+  </div>
+
+  <button id="redirect-button" onclick="redirectToLoginPage()"></button>
+  <footer>
+    <p>&copy; 2023 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
