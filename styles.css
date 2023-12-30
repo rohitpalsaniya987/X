@@ -23,7 +23,7 @@ iframe {
   }
 
 header {
-    background-color: #333;
+    background-color: rgb(0,0,0,0.5 );
     padding: 20px;
     color: #fff;
 }
